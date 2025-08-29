@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quiz — Guia Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Quiz</h1>
+      <a href="index.html">Voltar</a>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Quiz de conhecimentos</h2>
+    <form id="quiz-form">
+      <ol>
+        <li>
+          <fieldset>
+            <legend>O que é HTML?</legend>
+            <label><input type="radio" name="q1" value="a"> Linguagem de estilos</label>
+            <label><input type="radio" name="q1" value="b"> Linguagem de marcação (correta)</label>
+            <label><input type="radio" name="q1" value="c"> Banco de dados</label>
+          </fieldset>
+        </li>
+        <!-- 7-9 perguntas adicionais simplificadas -->
+        <li>
+          <fieldset>
+            <legend>Qual regra ajuda na acessibilidade?</legend>
+            <label><input type="radio" name="q2" value="a"> Remover outline</label>
+            <label><input type="radio" name="q2" value="b"> Usar labels conectados (correta)</label>
+            <label><input type="radio" name="q2" value="c"> Usar somente cores claras</label>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>Onde salvar preferências do tema sem back-end?</legend>
+            <label><input type="radio" name="q3" value="a"> localStorage (correta)</label>
+            <label><input type="radio" name="q3" value="b"> Banco de dados</label>
+            <label><input type="radio" name="q3" value="c"> Cookies</label>
+          </fieldset>
+        </li>
+      </ol>
+      <button type="submit">Verificar</button>
+    </form>
+    <div id="quiz-result" aria-live="polite"></div>
+  </main>
+
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fluxo de Projeto — Guia Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Fluxograma</h1>
+      <a href="index.html">Voltar</a>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Fluxo de um projeto web</h2>
+    <div class="flow-svg">
+      <!-- SVG simplificado do fluxo -->
+      <svg viewBox="0 0 1000 200" role="img" aria-label="Fluxograma: etapas do projeto">
+        <g class="step" data-step="Descoberta" tabindex="0">
+          <rect x="10" y="40" width="140" height="60" rx="6" fill="#2563EB"/>
+          <text x="80" y="75" fill="#fff" font-size="12" text-anchor="middle">Descoberta</text>
+        </g>
+        <g class="step" data-step="Requisitos" tabindex="0">
+          <rect x="170" y="40" width="140" height="60" rx="6" fill="#10B981"/>
+          <text x="240" y="75" fill="#fff" font-size="12" text-anchor="middle">Requisitos</text>
+        </g>
+        <g class="step" data-step="Protótipo" tabindex="0">
+          <rect x="330" y="40" width="140" height="60" rx="6" fill="#111827"/>
+          <text x="400" y="75" fill="#fff" font-size="12" text-anchor="middle">Protótipo</text>
+        </g>
+        <g class="step" data-step="Design" tabindex="0">
+          <rect x="490" y="40" width="140" height="60" rx="6" fill="#2563EB"/>
+          <text x="560" y="75" fill="#fff" font-size="12" text-anchor="middle">Design</text>
+        </g>
+        <g class="step" data-step="Implementação" tabindex="0">
+          <rect x="650" y="40" width="140" height="60" rx="6" fill="#10B981"/>
+          <text x="720" y="75" fill="#fff" font-size="12" text-anchor="middle">Implementação</text>
+        </g>
+      </svg>
+    </div>
+    <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

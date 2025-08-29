@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boas Práticas — Guia Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Boas Práticas</h1>
+      <a href="index.html">Voltar</a>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Boas práticas profissionais</h2>
+
+    <div class="accordion" id="accordion">
+      <section class="accordion-item">
+        <h3><button class="accordion-toggle" aria-expanded="false">Semântica & Acessibilidade</button></h3>
+        <div class="accordion-panel">
+          <ul>
+            <li>Use landmarks (header, main, footer).</li>
+            <li>Forneça texto alternativo descritivo em imagens.</li>
+            <li>Conecte labels a inputs (for/id).</li>
+          </ul>
+          <pre><code>&lt;label for="nome"&gt;Nome&lt;/label&gt;&lt;input id="nome"/&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="accordion-item">
+        <h3><button class="accordion-toggle" aria-expanded="false">Responsividade</button></h3>
+        <div class="accordion-panel">
+          <ul>
+            <li>Mobile-first com media queries.</li>
+            <li>Use Flexbox e Grid para layouts adaptativos.</li>
+            <li>Prefira unidades relativas (rem, %) para tipografia.</li>
+          </ul>
+          <pre><code>@media (min-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }</code></pre>
+        </div>
+      </section>
+
+      <section class="accordion-item">
+        <h3><button class="accordion-toggle" aria-expanded="false">Organização de CSS</button></h3>
+        <div class="accordion-panel">
+          <ul>
+            <li>Use BEM ou outra convenção para nomes.</li>
+            <li>Use variáveis CSS para cores e tipografia.</li>
+            <li>Comente e separe layouts de componentes.</li>
+          </ul>
+          <pre><code>.
+.btn--primary { background: var(--color-primary); }</code></pre>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="checklist">
+      <h3>Checklist pessoal</h3>
+      <ul>
+        <li><label><input type="checkbox" data-key="check-semantica"> Revisar semântica</label></li>
+        <li><label><input type="checkbox" data-key="check-responsividade"> Testar em mobile</label></li>
+        <li><label><input type="checkbox" data-key="check-performance"> Otimizar imagens</label></li>
+      </ul>
+      <div id="progress">Progresso: 0%</div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

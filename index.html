@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guia Profissional de Desenvolvimento Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="logo">Guia Profissional de Desenvolvimento Web</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false">☰<span class="sr-only">Abrir menu</span></button>
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tecnologias.html">Tecnologias</a></li>
+          <li><a href="boas-praticas.html">Boas Práticas</a></li>
+          <li><a href="fluxo.html">Fluxo</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false" title="Alternar tema">Tema</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero">
+      <h2>Aprenda o essencial para começar a desenvolver para a web</h2>
+      <p>HTML, CSS e JavaScript: entenda o papel de cada um e boas práticas profissionais.</p>
+      <a class="btn primary" href="#sec-o-que">Começar</a>
+    </section>
+
+    <section id="sec-o-que" class="o-que">
+      <h3>O que é HTML, CSS e JavaScript?</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h4>HTML</h4>
+          <p>HTML é a estrutura do conteúdo — marcação semântica para texto, imagens e links.</p>
+          <pre><code>&lt;h1&gt;Título&lt;/h1&gt;</code></pre>
+          <p class="when">Quando usar: estruturar conteúdo e semântica.</p>
+        </article>
+        <article class="card">
+          <h4>CSS</h4>
+          <p>CSS é a linguagem de estilos que define aparência, layout e responsividade.</p>
+          <pre><code>h1 { color: #2563EB; }</code></pre>
+          <p class="when">Quando usar: estilizar e tornar responsivo.</p>
+        </article>
+        <article class="card">
+          <h4>JavaScript</h4>
+          <p>JS adiciona comportamento: interações, DOM e persistência no cliente.</p>
+          <pre><code>document.querySelector('h1').textContent = 'Olá!';</code></pre>
+          <p class="when">Quando usar: interações e lógica dinâmica.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav>
+        <a href="index.html">Home</a> •
+        <a href="tecnologias.html">Tecnologias</a> •
+        <a href="boas-praticas.html">Boas Práticas</a>
+      </nav>
+      <p>Feito por: Seu Nome — 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

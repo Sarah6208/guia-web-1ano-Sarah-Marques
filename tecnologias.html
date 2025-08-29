@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tecnologias — Guia Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Guia — Tecnologias</h1>
+      <a href="index.html">Voltar</a>
+    </div>
+  </header>
+  <main class="container">
+    <section>
+      <h2>Panorama de Tecnologias</h2>
+      <div class="controls">
+  <label for="search">Buscar:</label>
+  <input id="search" type="search" placeholder="Pesquisar tecnologias..." aria-controls="tech-grid" />
+
+        <div class="filters" role="toolbar" aria-label="Filtros de categoria" aria-controls="tech-grid">
+          <button class="filter-btn" data-filter="all" aria-pressed="false" aria-controls="tech-grid">Todas</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false" aria-controls="tech-grid">Front-end</button>
+          <button class="filter-btn" data-filter="backend" aria-pressed="false" aria-controls="tech-grid">Back-end</button>
+          <button class="filter-btn" data-filter="db" aria-pressed="false" aria-controls="tech-grid">Bancos de dados</button>
+          <button class="filter-btn" data-filter="devops" aria-pressed="false" aria-controls="tech-grid">DevOps</button>
+          <button class="filter-btn" data-filter="tests" aria-pressed="false" aria-controls="tech-grid">Testes</button>
+        </div>
+        <div class="actions">
+          <button id="export-csv">Exportar CSV</button>
+        </div>
+      </div>
+
+      <div id="tech-grid" class="tech-grid" aria-live="polite">
+        <!-- Cards serão gerados por JS -->
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Fechar">×</button>
+      <h3 id="modal-title"></h3>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/technologies.js"></script>
+</body>
+</html>
